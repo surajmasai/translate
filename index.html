@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Box {
+            height: 300px;
+            width: 300px;
+        }
+
+        #Box2 {
+            height: 300px;
+            width: 300px;
+        }
+
+        #maincont {
+            text-align: center;
+
+        }
+
+        button {
+            padding: 1%;
+        }
+
+        #container {
+            width: 70%;
+            margin: auto;
+            border: 1px solid red;
+
+            padding-bottom: 50px;
+            background-color: rgb(75, 74, 74);
+            margin-top: 50px;
+        }
+
+        #heading {
+            text-align: center;
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .btn {
+            background-color: turquoise;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        .lang {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="heading">Translate</h1>
+        <div id="maincont">
+            <label for="lang" class="lang">Please select a Language</label>
+            <select name="lang" id="Langs" onchange="getTheValu()"></select>
+            <br>
+            <br>
+            <textarea id="Box" rows="10" cols="50">
+
+            </textarea>
+            <textarea id="Box2" rows="10" cols="50">
+
+            </textarea>
+            <br>
+            <button class="btn" id="button" onclick="handleTrigger()"></button>
+            <button class="btn" onclick="getthevalu()" title="click to translate">translate</button>
+            <button class="btn" onclick="textToAudio()">Speak out</button>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="SpeechRecognition.js"></script>
+    <script src="peechSynthesis.js"></script>
+</body>
+
+</html>
